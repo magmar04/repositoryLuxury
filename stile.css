@@ -19,6 +19,13 @@ h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
 .button{padding: 18px 28px; background: #316bff; color: #fff; display: inline-block; border-radius: 4px;}
 
 
+/* clearfix */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* heder */
 .heder{
@@ -51,7 +58,7 @@ h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
 .hero{
     height: 600px;
     display: flex; width: 100%; align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9)), url('hero.jpg') no-repeat center center;
+    background: linear-gradient(0deg, rgba(0,0,0,.2), rgba(0,0,0,0.9)), url('bocce.jpg ') no-repeat center center;
     background-size: cover;
 }
 
@@ -69,7 +76,15 @@ h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
 
 
 
-
+/* home */
+.dati{
+    background-color: #fff;
+    float: left;
+    padding: 5%;
+    width: 22.5%;
+    text-align: center;
+    
+}
 
 
 
