@@ -5,15 +5,21 @@ body{
 
 a{text-decoration: none;}
 
-h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
+h1,h2.h3,h4,h5,p {color: #444444;}
+
+h1{
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 4%;
+}
 
 
-.big-text{font-size: 70px; font-weight: 900;}
+/* .big-text{font-size: 70px; font-weight: 900;}
 .mid-text{font-size: 40px;}
 .normal-text{font-size: 20px;}
-.small-text{font-size: 14px;}
+.small-text{font-size: 14px;} */
 
-.intro-text{text-transform: uppercase; font-size: 20px; font-weight: bold;}
+.intro-text{text-transform: uppercase; font-size: 30px; font-weight: bold;}
 
 
 .button{padding: 18px 28px; background: #316bff; color: #fff; display: inline-block; border-radius: 4px;}
@@ -37,7 +43,8 @@ h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
     transform: translateX(-50%);
     padding: 30px;
     display: flex;
-    max-width: 1350px;
+    background-color: #444444;
+    /* max-width: 1350px; */
 }
 
 .logo{}
@@ -77,23 +84,72 @@ h1,h2.h3,h4,h5,p {color: #000; padding-bottom: 30px;}
 
 
 /* home */
+
+.blocchi{
+    background-color: rgb(199, 199, 199);
+
+}
 .dati{
-    background-color: #fff;
+    /* background-color: #fff; */
     float: left;
-    padding: 5%;
+    /* padding: 1%; */
+    padding: auto;
     width: 22.5%;
     text-align: center;
-    
+    /* border: 3px solid black; */
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    /* border-radius: 20px; */
+}
+
+.sottocaselle{
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+}
+
+
+.colornum{
+    color: #1b98e0;
 }
 
 
 
+/* Mappa */
+
+.mappa{
+    margin-top: 7%;
+    text-align: center;
+    padding: 2%;
+}
+
+.mappasfondo{
+    background-color:white;
+}
+
+.menumappa{
+    width: 100%;
+}
+
+.menumappa li{display:inline-block ;}
+.menumappa li a{color: white; padding: 15px; display: block; ;}
 
 
 
+.hedermappa{
 
+    width:100%;
+    position: fixed;
+    top:0;  
+    left:50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    display: flex;
+    /* max-width: 1350px; */
 
-
+    background-color: #444444;
+}
 
 
 
