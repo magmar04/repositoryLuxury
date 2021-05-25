@@ -9,6 +9,84 @@
     <link href="https://fonts.google.com/share?selection.family=Inter:wght@300;400;700;900"/>
 </head>
 <body>
+    <div class="heder">
+        <div class="logo">
+            <img src="foto/Logo.png" alt="Logo sito" width="50" height="50">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pagina1.html">Prodotti</a></li>
+            <li><a href="pagina2.html">Chi siamo</a></li>
+        </ul>
+    
+
+
+
+        
+            
+        <!-- <div class="cta">
+            <a href="mappa.html" class="button"> Mappa  </a>
+        </div> -->
+    </div>
+
+    <div class="scorrimento2">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1"> 
+                <input type="radio" name="radio-btn" id="radio2">
+    
+                <div class="slide first">
+                    <img src="foto/distilleria2.jpg" alt="">
+                </div>
+    
+                <div class="slide">
+                    <img src="foto/distilleria.jpg" alt="">
+                </div>
+    
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                </div>
+    
+            </div>
+    
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked=true;
+                counter++;
+                if(counter>2){
+                    counter=1;
+                }
+
+            }, 5000);
+        </script>
+
+    </div>
+
+    <div class="finale group" :after>
+        <div class="finale1">
+            <h1 class="textfinale">Dove siamo</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.3324196694603!2d9.343361615386224!3d45.583861833472184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786b73bfdd76883%3A0xf504c46b51eb2ef1!2sLiquorificio%20Mariani%20Srl!5e0!3m2!1sit!2sit!4v1620724863473!5m2!1sit!2sit" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="finale2">
+            <h1 class="textfinale">Contatti</h1>
+            <ul>
+                <li>Via Agrate, 99/5 20863 Concorezzo (MB)</li>
+                <li>039/648698</li>
+                <li>info@liquorimariani.it</li>
+            </ul>
+        </div>
+    </div>
+
     
 </body>
 </html>
