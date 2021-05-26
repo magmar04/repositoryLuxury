@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link href="stile.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.google.com/share?selection.family=Inter:wght@300;400;700;900"/>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Montserrat: ital, wght @ 0,100; 1,700 & display = swap "rel =" stylesheet ">  
+
+    
+
 </head>
 <body>
     <div class="heder">
@@ -25,46 +30,46 @@
         </div>
     </div>
     
-    <div class="hero">
+    <!-- <div class="hero">
         <div class="hero__content">
             <p class="intro-text">Alcolici dal 1978</p>
             <h1>Liquorificio Mariani</h1>
-            <!-- <a href="" class="button">discover more</a> -->
+            <a href="" class="button">discover more</a>
     
     
     
         </div>
-    </div>
+    </div> -->
 
     <div class="scorrimento">
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1"> 
                 <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+                <!-- <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4"> -->
     
                 <div class="slide first">
-                    <img src="foto/liquori.jpg" alt="">
+                    <img src="foto/erbe.jpg" alt="">
                 </div>
     
                 <div class="slide">
-                    <img src="foto/2.jpg" alt="">
+                    <img src="foto/botti.jpg" alt="">
                 </div>
     
-                <div class="slide">
+                <!-- <div class="slide">
                     <img src="foto/rum.jpg" alt="">
                 </div>
     
                 <div class="slide">
                     <img src="foto/sciroppi.jpg" alt="">
-                </div>
+                </div> -->
     
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
                     <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
+                    <!-- <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div> -->
                 </div>
     
             </div>
@@ -72,8 +77,8 @@
             <div class="navigation-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+                <!-- <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label> -->
             </div>
         </div>
 
@@ -82,7 +87,7 @@
             setInterval(function(){
                 document.getElementById('radio' + counter).checked=true;
                 counter++;
-                if(counter>4){
+                if(counter>2){
                     counter=1;
                 }
 
