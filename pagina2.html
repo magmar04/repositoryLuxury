@@ -24,6 +24,12 @@
         
         <img src="foto/Logo.png" alt="Mariani & Fumagalli" class="nostrologo" height="50" width="50">
 
+        <div class="hamburger" onclick="hamburger1()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- <div class="cta">
             <a href="mappa.html" class="button"> Mappa  </a>
         </div> -->
@@ -93,7 +99,12 @@
     
 </body>
 
-
+<script>
+    function hamburger1() {
+        var menu= document.getElementsByClassName("menu")[0];
+        menu.classList.toggle("menu--open");
+    }
+</script>
 
 
 </html>
