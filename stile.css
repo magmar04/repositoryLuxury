@@ -67,7 +67,7 @@ h1{
 .menu{
     width: 100%;
     transition: 0.5s ;
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .menu :hover{
@@ -574,7 +574,10 @@ input.search:focus{
         width: 100%;
         height: 110px;
         transform: translateX(200%);
-        background: rgba(0, 0, 0, 0.521);
+        background: rgba(0, 0, 0, 0.692);
+        text-align: center;
+        padding-top: 30px;
+        
     }
 
     
@@ -583,7 +586,7 @@ input.search:focus{
 
 .menu--open{
     display: block;
-    transform: translateX(-2%);
+    transform: translateX(-3%);
 }
 
 
