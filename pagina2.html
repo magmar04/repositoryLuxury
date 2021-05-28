@@ -8,7 +8,10 @@
     <link href="stile.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.google.com/share?selection.family=Inter:wght@300;400;700;900"/>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="header">
@@ -29,45 +32,97 @@
             <span></span>
             <span></span>
         </div>
-
-        <!-- <div class="cta">
-            <a href="mappa.html" class="button"> Mappa  </a>
-        </div> -->
     </div>
 
     <div class="storia group" :after>
-        <div class="stofoto">
-            <img src="foto/distilleria.jpg" alt="" width="500" height="400">
-        </div>
-        <div class="text2">
-            <p class="titolo2">Storia</p>
-            <p>artigiani ecc</p>
-        </div>
 
-        <div class="text2">
-            <p class="titolo2">Oggi...</p>
-            <p>noi siamo ecc</p>
+        <div class="paragrafo1 reveal">
+            <div class="imgstoria">
+                <img src="foto/distilleria.jpg" alt="" width="400" height="300">
+            </div>
+            <div class="text2">
+                <p class="titolo2">Storia</p>
+                <p>Il 14 luglio del 1978 Mariani Luigi, dopo aver maturato un’esperienza trentennale come liquorista in aziende di successo, con l’intento di produrre in proprio liquori di qualità superiore, fonda il LIQUORIFICIO MARIANI S.R.L. con sede a Concorezzo in Via Agrate 105.
+                    La qualità dei prodotti e la cura del servizio al cliente portano ad una rapida crescita dell’azienda nella quale cominciano ad operare anche i tre  giovani figli Daniele, Marco e Alessandro.
+                    La necessità di acquisire nuovi spazi produttivi porta all’acquisizione della ILA SRL, azienda liquoristica di Treviglio (bg). Nel frattempo viene programmato il trasferimento della sede centrale nell’attuale insediamento produttivo a Concorezzo in Via Agrate 99/5 dove vengono riunite tutte le attività amministrative e produttive.</p>
+            </div>
         </div>
+        
 
-        <div class="stofoto">
-            <img src="foto/distilleria2.jpg" alt="" width="500" height="400">
+
+        <div class="paragrafo1 reveal">
+            <div class="text2">
+                <p class="titolo2">Da sempre...</p>
+                <p>LIQUORIFICIO MARIANI S.R.L. ha sempre avuto come obiettivi la massima qualità dei prodotti e il miglior servizio per i clienti. Per questo, nonostante la grande crescita, il continuo sviluppo di nuovi prodotti e l’aggiornamento tecnologico, 
+                    l’azienda ha mantenuto col passare degli anni una gestione familiare che ha permesso un continuo e severo controllo di tutte le procedure aziendali ed un costante aggiornamento alle nuove mode e tendenze, mantenendo uno stretto legame con 
+                    la migliore tradizione liquoristica italiana. Il rapporto privilegiato e diretto tra produttore e cliente oltre a permetterci di contenere i costi, ci consente di soddisfare il cliente nelle sue esigenze più particolari come lo studio di prodotti esclusivi.</p>
+            </div>
+            <div class="imgstoria2">
+                <img src="foto/distilleria2.jpg" alt="" width="400" height="300">
+            </div>
         </div>
+        
     </div>
 
 
 
-
-    <div class="futuro">
-        <p class="titolo2">..Futuro..</p>
-        <img src="foto/fururo.jpg" alt="">
-        <p></p>
+    <div class="disco reveal">
+        <p>Le discoteche che serviamo</p>
     </div>
 
-
-
-
-
-
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/fabrique-milano.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/magazzini-generali.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/hollywood-milano.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/nottingham-forest.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/tocqueville-milano.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text zoom">
+                <img src="foto/the-club.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text">
+                <img src="foto/qualunquemente.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text">
+                <img src="foto/bobadilla.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text">
+                <img src="foto/loolapaloosa-milano.jpg" alt="">
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-cell__text">
+                <img src="foto/amnesia-milano.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
 
 
 
@@ -96,6 +151,8 @@
         </div>
     </div>
 
+
+
     
 </body>
 
@@ -104,7 +161,11 @@
         var menu= document.getElementsByClassName("menu")[0];
         menu.classList.toggle("menu--open");
     }
+
+    ScrollReveal().reveal('.reveal', {distance: '100px', duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 600});
+    ScrollReveal().reveal('.zoom', { duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale:0.65, mobile: false});
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
