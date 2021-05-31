@@ -368,6 +368,12 @@ h1{
     background-color: #444444;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.finale-pag2{
+    background-color: #444444;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 45px;
 }
 
@@ -445,7 +451,7 @@ input.search:focus{
 
 /*terza pagina*/
 .storia{
-    margin-top: 7%;
+    margin-top: 110px;
     padding: 5%;
 }
 
@@ -492,6 +498,36 @@ input.search:focus{
     text-align: justify;
 }
 
+@media (max-width: 1200px){
+    .paragrafo1{
+        /* border: black 2px solid; */
+        height: 400px;
+        width: 100%;
+    }
+    
+    .imgstoria{
+        width: 100%;
+        padding: 3%;
+        text-align: center;
+    }
+    
+    .imgstoria2{
+        width: 100%;
+        padding: 3%;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    
+    .text2{
+        width: 100%;
+        float: left;
+        padding: 3%;
+        font-family: "Mate SC", serif;
+        font-size: large;
+        line-height: 25px;
+        text-align: justify;
+    }
+}
 .disco{
     text-align: center;
     font-size: 50px;
@@ -642,39 +678,39 @@ input.search:focus{
     cursor: default;
     box-shadow: inset 0 0 0 16px brown, 0 1px 2px gold;
     transition: all 0.4s ease-in-out;
-
-
-    
-
-
-    /* -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease; */
 }
+
 
 
 .locali{
     display: block;
-    background: #00000094;
+    color: rgb(255, 0, 0);
     height: 250px;
     width: 250px;
     border-radius: 100%;
     line-height: 250px;
     text-align: center;
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
     opacity: 0;
     transition: all 0.4s ease-in-out;
     transform: scale(0);
 }
 
- .carousel-cell:hover > .carousel-cell__text{
-    display: none;
+.carousel-cell:hover > .carousel-cell__text{
+    /* display: none; */
     /* filter: brightness(50%); */
     /* -webkit-filter: brightness(100%); */
+
+
+
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
     
 }
 
@@ -682,4 +718,6 @@ input.search:focus{
     /* display: block; */
     transform: scale(1);
     opacity: 1;
+
+
 }
